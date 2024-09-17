@@ -15,24 +15,24 @@ function randomColor() {
   return Math.floor(Math.random() * backColor.length);
 }
 
-function pozadi() {
+function bgColor() {
   const index = randomColor();
 
   return backColor[index];
 }
 
-function zmena() {
-  let a = pozadi();
+function changeColor() {
+  let a = bgColor();
 
   let b = document.querySelector("body");
   b.style.background = a;
 }
 
-const tlacitko = document.querySelector("#bttn");
-tlacitko.addEventListener("click", function (element) {
+const btt = document.querySelector("#bttn");
+btt.addEventListener("click", function (element) {
   element.preventDefault();
-  zmena();
-  let barva = pozadi();
+  changeColor();
+  let color = bgColor();
   let p = document.querySelector(".Hex");
-  p.textContent = barva;
+  p.textContent = color;
 });
