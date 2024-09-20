@@ -1,0 +1,33 @@
+html{
+    font-size: 62.5%;
+}
+
+
+body {
+    background: #0a0a23;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem   ;
+   
+}
+
+
+
+
+.COUNTER{
+    font-size: 2rem ;
+}
