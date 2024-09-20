@@ -1,0 +1,29 @@
+html{
+    font-size: 62.5%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem   ;
+   
+}
+
+
+
+
+.box{
+    background: antiquewhite;
+}
