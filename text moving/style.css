@@ -1,0 +1,44 @@
+html {
+
+    font-size: 62.5%;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.box {
+    position: absolute;
+    bottom: 3rem;
+    font-size: 2rem;
+}
+
+
+#speed{
+    padding: 1rem;
+    width: 5rem;
+    border: none;
+  text-align: center;
+
+}
+
+
+
+
+label{
+    margin: 1rem;
+}
