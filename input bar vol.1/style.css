@@ -1,0 +1,36 @@
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Vycentrování vertikálně */
+}
+
+.search-container {
+    position: relative; /* Pozice relativní pro absolutní pozici lupy */
+}
+
+.text {
+    padding: 10px 40px 10px 40px; /* Vnitřní odsazení pro prostor pro ikonu */
+    border: 1px solid #ccc; /* Okraj */
+    border-radius: 4px; /* Zaoblení rohů */
+    width: 300px; /* Šířka inputu */
+}
+
+#loupe {
+    position: absolute; /* Absolutní pozice pro ikonu lupy */
+    left: 10px; /* Odsazení zleva */
+    top: 50%; /* Vertikální zarovnání */
+    transform: translateY(-50%); /* Vycentrování vertikálně */
+    border: none; /* Bez okraje */
+    background: none; /* Bez pozadí */
+    cursor: pointer; /* Ukazatel myši při přejetí */
+}
+
+#loupe img {
+    width: 20px; /* Šířka ikony lupy */
+    height: auto; /* Výška automaticky */
+}
