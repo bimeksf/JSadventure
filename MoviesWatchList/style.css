@@ -1,0 +1,50 @@
+
+.header-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.movie{
+
+display: flex;
+gap: 1em;
+justify-content: center;
+align-items: center;
+width: 60ch;
+}
+.movies-wrapper{
+  border: 1px solid black;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+hr {
+
+border: 1px solid black;
+}
+
+
+.searchBTN{
+  cursor: pointer;
+  transition: transform .2s;
+}
+.searchBTN>i:hover{
+transform: scale(1.2);
+}
+.movie>img{
+  width: 10em;
+}
+
+.addBtn{
+  cursor: pointer;
+  transition: transform .2s;
+}
+.addBtn>i:hover{
+transform: scale(1.2);
+}
