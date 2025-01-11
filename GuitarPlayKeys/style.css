@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+.hide{
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("gabriel-gurrola-2UuhMZEChdc-unsplash.jpg");
+  background-size: cover;
+
+  border-image: linear-gradient(hsl(240 100% 20% / 0.6), hsla(0, 33%, 56%, 0.6))
+    fill 1;
+}
+
+.container {
+  gap: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+button {
+  padding: 1em;
+  font-size: 2rem;
+  border: solid 2px black;
+  transition: all 0.25s;
+  background-color: transparent;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.2);
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(55, 10, 87, 0.4);
+}
+
+.active {
+  border: solid 2px gold;
+  transform: translateY(-50%);
+}
+
+h1 {
+  padding-bottom: 5em;
+  animation: opacityText 2s infinite;
+}
+
+@keyframes opacityText {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
