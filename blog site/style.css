@@ -1,0 +1,190 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hide{
+  display: none;
+}
+.wrapper{
+  width: 100%;
+}
+
+.hamburger{
+  width: 50%;
+}
+
+
+.topbar-wrapper{
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamIcon{
+  cursor: pointer;
+}
+.navigace ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+ul{
+
+  list-style: none;
+}
+ul a {
+  padding: 1em;
+  text-decoration: none;
+  color: white;
+}
+.navigace a:hover {
+  text-decoration: underline;
+}
+.navigace{
+  background: rgba(7, 7, 7, 0.39);
+  position: absolute;
+  top: 6.2em;
+  right: 0;
+  width: 100%;
+  text-align: end;
+  text-transform: uppercase;
+
+}
+
+.container{
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 1.5em;
+  margin: 0 auto;
+}
+
+
+  /** items **/
+
+
+.items-Wrappers{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   gap: 1em;
+
+}
+
+@media (min-width: 560px){
+  body{
+    font-size: 2rem;
+  }
+
+
+  ul a{
+    color: black;
+    font-weight: 500;
+  }
+  .navigace ul{
+    
+    flex-direction: row;
+    justify-content: flex-end;
+
+    
+  }
+  
+  .navigace{
+   position: static;
+   background:transparent;
+  }
+
+  
+
+
+}
+
+
+
+
+.itemImg{
+  width: 100%;
+  object-fit: cover;
+  border-radius: .7em;
+
+}
+.item-text{
+  padding: 1em 0;
+  margin: 0;
+
+}
+
+.item-text .Date{
+  font-size: .8rem;
+}
+
+.item-text p{
+font-size: 1.2rem;
+margin: 0.5em 0;
+
+
+
+
+}
+.item-text h3{
+font-size: 1.5rem;
+margin-bottom: 0;
+}
+
+
+
+.more{
+  display: block;
+  padding: 1em;
+text-decoration: underline;
+cursor: pointer;
+font-weight: 600;
+font-size: 1.5rem;
+text-align: center;
+}
+.more:hover {
+  opacity: 0.8;
+}
+
+
+.footerText{
+  padding: 1em;
+  margin: 0;
+  text-align: center;
+  background-color: #202020;
+  color: white;
+  font-size: 0.75em;
+}
+.footerH{
+  font-weight: 600;
+  color: #ECECEC;
+  margin-bottom: 0;
+
+}
+.footerText p{
+  color: #D7D7D7;
+  
+}
+
+.textWrapper{
+  position: absolute;
+  top:  12em;
+  left: 1em;
+  text-align: left;
+  color: white;
+}
+
+
+
+
+.heroImg{
+  object-fit: cover;
+  width: 100%;
+}
+.hero{
+  width: 100%
+}
