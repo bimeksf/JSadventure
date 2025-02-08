@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  color-scheme: dark;
+}
+
+.container {
+  width: min(65ch, 100% - 4rem);
+  margin-inline: auto;
+  text-align: center;
+}
+
+body {
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  background-image: url(images/background-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "GT Pressura Mono Regular Regular";
+  height: 100dvh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+.logo {
+  width: 50%;
+  object-fit: cover;
+}
+.header-wrapper {
+  padding: 1em;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 1.4rem;
+}
+
+.sub-title {
+  padding: 1em 0.5em;
+  margin: 0;
+  line-height: 1.3;
+  font-size: 1rem;
+  color: #c7c5c5;
+}
+.drag-menu-title {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0.3em;
+}
+
+.drag-text {
+  font-size: 0.6rem;
+}
+
+.drag-menu input {
+  outline: 3px solid rgb(69, 32, 72);
+  padding: 1em;
+}
+
+.drag-menu {
+  border: 3px dashed rgb(69, 32, 72);
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.drag-menu input[type="file"] {
+  display: none;
+}
+
+.drag-menu label {
+  cursor: pointer;
+  padding: 1em 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.6em;
+  font-size: 0.6rem;
+  margin-bottom: 1em;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form input,
+.btn-form {
+  border-radius: 1em;
+  width: 100%;
+  padding: 1em;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.form input::placeholder {
+  padding: 0.5em;
+  color: #c7c5c5;
+}
+
+.btn-form {
+  color: rgb(69, 32, 72);
+  background: rgb(216, 96, 16);
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.btn-form:hover {
+  transform: scale(1.1);
+  background-color: #c7c5c5;
+}
+
+.form input:focus-visible {
+  outline: 3px solid rgb(216, 96, 16);
+  outline-offset: 0.25rem;
+}
+
+.form input {
+  outline: 3px solid rgb(69, 32, 72);
+}
+
+.form label {
+  text-align: left;
+  font-size: 1rem;
+  display: block;
+  align-self: start;
+  margin-bottom: 0.5em;
+}
+
+.btn-form::before {
+  content: url("/images/pattern-squiggly-line-bottom.svg");
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.form::before {
+  content: url("/images/pattern-circle.svg");
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+.form::before {
+  content: url("/images/pattern-squiggly-line-top.svg");
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+.form::before {
+  content: url("/images/pattern-lines.svg");
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.error-message {
+  color: rgb(216, 96, 16); /* Oranžová barva */
+  font-size: 0.9em;
+  margin-top: 4px;
+  display: none; /* Skryje zprávu ve výchozím stavu */
+}
+.form:optional{
+
+}
+.form:required{
+
+}
+.form:invalid{
+
+
+
+}
+
+
+
+
+
+@media (min-width: 600px) {
+  .wrapper {
+  }
+  body {
+    overflow: initial;
+  }
+  .logo {
+    padding-top: 1em;
+    width: 30%;
+  }
+
+  .header-wrapper {
+    padding: 0;
+  }
+  .title {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+  .sub-title {
+    padding-top: 1em;
+    font-size: 1.2rem;
+  }
+
+  .drag-menu-title,
+  .drag-menu label {
+    font-size: 1.2rem;
+  }
+  .info,
+  .drag-text {
+    font-size: 0.7rem;
+  }
+
+  .drag-menu label img {
+    width: 10%;
+  }
+  .container {
+ 
+  }
+}
+
+
+
+
+
+
+.date-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em; 
+}
+
+.git-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-logo {
+  object-fit: cover;
+  width: 100%;
+  max-width: 150px; 
+}
+
+.user {
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1em;
+  max-width: 50px; 
+}
+
+
+.ticket-wrapper {
+  margin-top: 2em;
+  padding-top: 3em;
+  padding-left: 2em;
+  display: flex;
+  justify-content: flex-start;  
+  align-items: flex-start;      
+  flex-direction: column;
+  color: #c7c5c5;
+  gap: 4em;
+  position: relative; 
+}
+
+.ticket-wrapper::before {
+  content: url(/images/pattern-ticket.svg);
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.date-text {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.name {
+  margin: 0 auto;
+  padding-left: 0.6em;
+  color: white;
+}

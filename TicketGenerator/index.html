@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://db.onlinewebfonts.com/c/226f58ab113a6d821def90a7d6dc2427?family=GT+Pressura+Mono+Regular+Regular" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-wrapper">
+          <img src="images/logo-full.svg" alt="" class="logo"/>
+        </div>
+      </header>
+
+      <div class="wrapper">
+        <h1 class="title">Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p class="sub-title">
+          Secure your spot at next year's biggest coding conference.
+        </p>
+      </div>
+
+      <main>
+        <div class="drag-menu-wrapper">
+          <h2 class="drag-menu-title">Upload Avatar</h2>
+          <div class="drag-menu">
+            <input type="file" id="drag" />
+            <label for="drag">
+              <img src="images/icon-upload.svg" alt="" />
+              <span class="drag-text">Drag and Drop or click to upload</span></label>
+          </div>
+          <span class="info"><img src="images/icon-info.svg" alt=""> Upload your photo(JPG or PNG, max size: 500KB)</span>
+        </div>
+        <form class="form" id="myForm">
+          <div class="input-wrapper">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name"  required/>
+            <span class="error-message" id="email-error"></span>
+          </div>
+          <div class="input-wrapper">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="expample@expample.com" name="email" required/>
+            <span class="error-message" id="email-error"></span>
+          </div>
+          <div class="input-wrapper">
+            <label for="gitHub">GitHub Username</label>
+            <input type="text" id="gitHub" placeholder=" @uorusername" name="gitHub" required/>
+            <span class="error-message" id="email-error"></span>
+          </div>
+          <button class="btn-form">Genere my Ticket</button>
+        </form>
+      </main>
+
+
+          
+       
+
+
+     
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
