@@ -1,0 +1,9 @@
+.palet{
+  margin-top: 1em;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  
+}
